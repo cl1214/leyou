@@ -1,0 +1,27 @@
+import com.github.tobato.fastdfs.domain.StorePath;
+import com.github.tobato.fastdfs.service.FastFileStorageClient;
+import com.leyou.LyUploadService;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest(classes = LyUploadService.class)
+public class FdfsTest {
+    @Autowired
+    private FastFileStorageClient storageClient;
+    @Test
+    public void testUpload() throws FileNotFoundException {
+        File file = new File("D:/leyou/upload/11.jpg");
+
+        StorePath storePath = storageClient.uploadFile(new FileInputStream(file),file.length(),"jpg",null);
+        System.out.println(storePath.getFullPath());
+
+    }
+}

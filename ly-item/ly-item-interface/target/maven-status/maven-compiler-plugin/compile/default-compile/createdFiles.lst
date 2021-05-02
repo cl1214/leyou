@@ -1,0 +1,11 @@
+com\leyou\common\pojo\SpecGroup.class
+com\leyou\common\pojo\Brand.class
+com\leyou\common\pojo\Sku.class
+com\leyou\common\pojo\Stock.class
+com\leyou\common\vo\SpuVo.class
+com\leyou\common\pojo\SpuDetail.class
+com\leyou\common\pojo\SpecParam.class
+com\leyou\common\pojo\Category.class
+com\leyou\common\pojo\Spu.class
+com\leyou\common\pojo\Item.class
+com\leyou\common\mapper\BaseDao.class
