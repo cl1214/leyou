@@ -19,7 +19,7 @@ spring:
     host: 192.168.156.60
 leyou:
   sms:
-    accessKeyId: LTAI4GCAXBS3LskkpKAwnAeZ # 你自己的accessKeyId
-    accessKeySecret: rj9x7cLr9sp1d7ejy9glAxsYJ9SWdZ # 你自己的AccessKeySecret
+    accessKeyId:  # 你自己的accessKeyId
+    accessKeySecret:  # 你自己的AccessKeySecret
     signName: 开开商城 # 签名名称
-    verifyCodeTemplate: SMS_193245187 # 模板名称
+    verifyCodeTemplate:  # 模板名称
